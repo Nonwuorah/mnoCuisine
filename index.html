@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MNO's Kitchen</title>
+    <link rel="icon" href="/files/lg1.jpeg" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            height: 100vh;
+            background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .menu-card img {
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .social-icon {
+            font-size: 1.5rem;
+            color: white;
+            transition: color 0.3s;
+        }
+
+        .social-icon:hover {
+            color: #0d6efd;
+        }
+
+        .navbar {
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+        .logo {
+        width: auto;
+        height: 3.5em;
+        
+      }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="/files/logo3.svg" alt="Brand logo" class="logo me-3" />
+                <span class="fw-bold">MNO's Kitchen</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-md-8 col-lg-6 position-relative text-white">
+                    <h1 class="display-4 fw-bold mb-4">Experience Global Flavors</h1>
+                    <p class="lead mb-4">Journey through taste with our internationally inspired cuisine, <br/> where taste meets excellence.</p>
+                    <button id="exploreMenu" class="btn btn-primary btn-lg rounded-pill px-4">Explore Menu</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Culinary Destinations</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card menu-card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1548940740-204726a19be3?auto=format&fit=crop&q=80" class="card-img-top" alt="Mediterranean Dish">
+                        <div class="card-body">
+                            <h5 class="card-title">Mediterranean Escape</h5>
+                            <p class="card-text">Fresh seafood pasta with herbs from the Greek islands</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-primary fw-bold">$24.99</span>
+                                <button class="btn btn-outline-primary">
+                                    Order Now <i class="bi bi-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card menu-card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&q=80" class="card-img-top" alt="Asian Fusion">
+                        <div class="card-body">
+                            <h5 class="card-title">Asian Fusion</h5>
+                            <p class="card-text">Sushi roll platter with modern interpretations</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-primary fw-bold">$21.99</span>
+                                <button class="btn btn-outline-primary">
+                                    Order Now <i class="bi bi-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card menu-card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?auto=format&fit=crop&q=80" class="card-img-top" alt="South American">
+                        <div class="card-body">
+                            <h5 class="card-title">South American Journey</h5>
+                            <p class="card-text">Argentinian steak with chimichurri sauce</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-primary fw-bold">$26.99</span>
+                                <button class="btn btn-outline-primary">
+                                    Order Now <i class="bi bi-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!-- <div class="text-center mt-4">
+            <button id="loadMore" class="btn btn-primary px-4 py-2">
+                Load More
+            </button>
+        </div> -->
+    </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1581349485608-9469926a8e5e?auto=format&fit=crop&q=80" 
+                         alt="Restaurant interior" 
+                         class="img-fluid rounded shadow">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="fw-bold mb-4">Our Culinary Journey</h2>
+                    <p class="text-muted mb-4">
+                        At MNO's Kitchen, we bring the world to your plate. Our chefs travel the globe, 
+                        discovering authentic recipes and innovative cooking techniques to create an unforgettable 
+                        dining experience. Each dish tells a story of tradition, culture, and passion for food.
+                    </p>
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-clock text-primary me-2"></i>
+                                <span>Open Daily 10am - 10pm</span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-geo-alt text-primary me-2"></i>
+                                <span>123 Food Court Street, Lagos</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Make a Reservation</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <form class="needs-validation" novalidate>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="4" required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary w-100" type="submit">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="/files/logo3.svg" alt="Brand logo" class="logo me-3" />
+                        <span class="fw-bold">MNO's Kitchen</span>
+                    </div>
+                    <p class="text-muted">Bringing global flavors to your neighborhood</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="mb-3">Contact</h5>
+                    <div class="mb-2">
+                        <i class="bi bi-telephone me-2"></i>
+                        <span>(234) 80-3707-3724</span>
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-envelope me-2"></i>
+                        <span>info@mnoskitchen.com</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="mb-3">Follow Us</h5>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <p class="text-center text-muted mb-0">© 2025 Mama's Nigerian Kitchen. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Form validation
+        (() => {
+            'use strict'
+            const forms = document.querySelectorAll('.needs-validation')
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+
+       
+
+    document.getElementById("exploreMenu").addEventListener("click", function() {
+        window.location.href = "menu.html";
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,2332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MNO's Kitchen</title>
+    <link rel="icon" href="/files/lg1.jpeg" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <style>
+      .hero-section {
+        height: 100vh;
+        background-image: url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80");
+        background-size: cover;
+        background-position: center;
+        position: relative;
+      }
+
+      .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      .menu-card img {
+        height: 250px;
+        object-fit: cover;
+      }
+
+      .social-icon {
+        font-size: 1.5rem;
+        color: white;
+        transition: color 0.3s;
+      }
+
+      .social-icon:hover {
+        color: #0d6efd;
+      }
+
+      .navbar {
+        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.9);
+      }
+
+      .contact-link {
+        display: block;
+        text-align: center;
+        margin-top: 40px;
+        padding: 20px;
+        background-color: #8b4513;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+
+      .contact-link:hover {
+        background-color: #6b3410;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 40px;
+        padding-top: 20px;
+        border-top: 2px solid #8b4513;
+        color: #666;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="hero-overlay"></div>
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <div class="col-md-8 col-lg-6 position-relative text-white">
+            <h1 class="display-4 fw-bold mb-4">Experience Global Flavors</h1>
+            <p class="lead mb-4">
+              Journey through taste with our internationally inspired cuisine,
+              <br />
+              where taste meets excellence.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-5">Menu</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Jollof Rice.jpg"
+                class="card-img-top"
+                alt="Jollof Rice"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Jollof Rice (Influenced by Spanish Paella)
+                </h5>
+                <p class="card-text">
+                  A rich, tomato-based rice dish, often cooked with onions,
+                  peppers, and spices, commonly served with grilled chicken or
+                  fish.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$24.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&q=80"
+                class="card-img-top"
+                alt="Mediterranean Delight"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Mediterranean Delight</h5>
+                <p class="card-text">Grilled lamb with couscous and tzatziki</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$24.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&q=80"
+                class="card-img-top"
+                alt="Italian Classic"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Italian Classic</h5>
+                <p class="card-text">Homemade pasta with truffle cream sauce</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$19.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="https://images.unsplash.com/photo-1548940740-204726a19be3?auto=format&fit=crop&q=80"
+                class="card-img-top"
+                alt="Mediterranean Dish"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Mediterranean Escape</h5>
+                <p class="card-text">
+                  Fresh seafood pasta with herbs from the Greek islands
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$24.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Piri Piri Chicken.jpeg"
+                class="card-img-top"
+                alt="Mozambique Dish"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Piri Piri Chicken (Mozambique - Portuguese Influence)
+                </h5>
+                <p class="card-text">
+                  Grilled chicken marinated in a spicy piri piri (bird's eye
+                  chili) sauce, a fusion of Portuguese and Mozambican flavors.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$21.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Bunny Chow.webp"
+                class="card-img-top"
+                alt="South African Dish"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Bunny Chow (South Africa - Indian Influence)
+                </h5>
+                <p class="card-text">
+                  A hollowed-out loaf of bread filled with a spicy curry,
+                  originally introduced by Indian immigrants in Durban.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$26.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Shawarma.jpeg"
+                class="card-img-top"
+                alt="North African Dish"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Shawarma (North Africa - Middle Eastern Influence)
+                </h5>
+                <p class="card-text">
+                  Thinly sliced, marinated meat (chicken, beef, or lamb) wrapped
+                  in pita bread, topped with garlic sauce and pickles.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$24.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Couscous Royale.jpeg"
+                class="card-img-top"
+                alt="Maghreb - French Fusion"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Couscous Royale (Maghreb - French Influence)
+                </h5>
+                <p class="card-text">
+                  A North African dish of steamed semolina grains served with
+                  slow-cooked lamb, chicken, sausages, and vegetables.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$21.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/kebab.jpeg"
+                class="card-img-top"
+                alt="Nigeria & Ghana Fusion"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Suya (Nigeria & Ghana - Similar to Middle Eastern Kebab)
+                </h5>
+                <p class="card-text">
+                  Spicy, skewered, and grilled meat coated with a blend of
+                  ground peanuts and spices, commonly sold by street vendors.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$26.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Bobotie1.jpeg"
+                class="card-img-top"
+                alt="South African Dish"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Bobotie (South Africa - Dutch Influence)
+                </h5>
+                <p class="card-text">
+                  A baked dish of minced meat with a curry-flavored egg custard
+                  topping, often served with yellow rice and chutney.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$24.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Ethiopian Spaghetti1.jpeg"
+                class="card-img-top"
+                alt="Ethiopia - Italian Fusion"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Ethiopian Spaghetti (Ethiopia - Italian Influence)
+                </h5>
+                <p class="card-text">
+                  A unique take on pasta with a spicy berbere-infused tomato
+                  sauce, sometimes served with injera (Ethiopian sourdough
+                  flatbread).
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$21.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Zanzibari Biryani.jpeg"
+                class="card-img-top"
+                alt="South American"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Zanzibari Biryani (Tanzania - Indian Influence)
+                </h5>
+                <p class="card-text">
+                  A fragrant rice dish with rich spices, slow-cooked meat, and
+                  potatoes, popular in the Swahili coastal regions.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$26.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Assorted Egwusi soup.jpg"
+                class="card-img-top"
+                alt="Mediterranean Dish"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Pounded Yam & Egusi Soup (West Africa - Inspired by Global
+                  Soups & Stews)
+                </h5>
+                <p class="card-text">
+                  A thick, nutty, and savory soup made from ground melon seeds,
+                  served with soft pounded yam for dipping.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$24.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Mandazi.jpeg"
+                class="card-img-top"
+                alt="Asian Fusion"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Mandazi (East Africa - Similar to Doughnuts/Beignets)
+                </h5>
+                <p class="card-text">
+                  Fried, slightly sweetened bread, often flavored with coconut
+                  and cardamom, served as a snack or breakfast treat.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$21.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Moroccan Tagine.jpeg"
+                class="card-img-top"
+                alt="South American"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Moroccan Tagine (Morocco - Middle Eastern & French Influence)
+                </h5>
+                <p class="card-text">
+                  A slow-cooked stew with meat, vegetables, and aromatic spices,
+                  cooked in a traditional clay pot called a tagine.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$26.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Cape Malay Curry.jpeg"
+                class="card-img-top"
+                alt="Mediterranean Dish"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Cape Malay Curry (South Africa - Malaysian & Indian Influence)
+                </h5>
+                <p class="card-text">
+                  A mildly spiced, fragrant curry with tender meat, potatoes,
+                  and a touch of sweetness from dried fruits.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$24.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Chakalaka & Pap.jpeg"
+                class="card-img-top"
+                alt="Asian Fusion"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Chakalaka & Pap (South Africa - Similar to Grits & Spicy
+                  Stews)
+                </h5>
+                <p class="card-text">
+                  A spicy vegetable relish served with pap (maize porridge),
+                  often paired with grilled meat.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$21.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Moambe Chicken.jpeg"
+                class="card-img-top"
+                alt="South American"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Moambe Chicken (Central Africa - French & Belgian Influence)
+                </h5>
+                <p class="card-text">
+                  Argentinian steak with chimichurri sauce
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$26.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Nyama Choma.jpeg"
+                class="card-img-top"
+                alt="Mediterranean Dish"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Nyama Choma (Kenya & Tanzania - Similar to BBQ Ribs & Steaks)
+                </h5>
+                <p class="card-text">
+                  Grilled or roasted meat (beef, goat, or lamb), seasoned simply
+                  with salt and served with ugali (maize porridge).
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$24.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Egyptian Koshari.jpeg"
+                class="card-img-top"
+                alt="Asian Fusion"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Egyptian Koshari (Egypt - Mediterranean & Indian Influence)
+                </h5>
+                <p class="card-text">
+                  A hearty street food dish made from lentils, rice, pasta, and
+                  crispy onions, topped with spicy tomato sauce.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$21.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Pilau Rice.jpeg"
+                class="card-img-top"
+                alt="South American"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Pilau Rice (East Africa - Indian & Middle Eastern Influence)
+                </h5>
+                <p class="card-text">
+                  Spiced rice dish cooked with fragrant cloves, cinnamon, and
+                  cardamom, often served with meat or vegetables.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$26.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Zanzibar Pizza.jpeg"
+                class="card-img-top"
+                alt="Mediterranean Dish"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Zanzibar Pizza (Tanzania - Fusion of Indian & Italian)
+                </h5>
+                <p class="card-text">
+                  A pan-fried stuffed pastry filled with minced meat, egg,
+                  cheese, and vegetables, served as street food.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$24.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Fried Rice.jpeg"
+                class="card-img-top"
+                alt="Fried Rice"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fried Rice</h5>
+                <p class="card-text">
+                  Stir-fried rice with mixed vegetables, prawns, and liver,
+                  served with plantain.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$21.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img src="/files/Akara.jpeg" class="card-img-top" alt="Akara" />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Akara (West Africa - Similar to Falafel)
+                </h5>
+                <p class="card-text">
+                  Deep-fried black-eyed pea fritters, crispy on the outside and
+                  soft inside, often eaten with pepper sauce.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$26.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Savory Fiesta Plantains.jpg"
+                class="card-img-top"
+                alt="Mediterranean Dish"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Savory Fiesta Plantains (Nigerian - Fusion of Caribbean)
+                </h5>
+                <p class="card-text">
+                  A grilled plantains topped with a rich, saucy mix of shredded
+                  chicken, sausages, and bell peppers, sure blend African and
+                  Caribbean flavors.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$24.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Naija Hot Chicken Platter.jpg"
+                class="card-img-top"
+                alt="Fried Rice"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Naija Hot Chicken Platter (African - West African Cuisine)
+                </h5>
+                <p class="card-text">
+                  Stir-fried grilled spicy chicken, garnished with fresh onions,
+                  bell peppers, and shredded carrots, served with dipping
+                  sauces.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$21.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Breakfast Supreme Scrambled Delight with Crispy Fries.jpg"
+                class="card-img-top"
+                alt="Akara"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Breakfast Supreme: Scrambled Delight with Crispy Fries
+                </h5>
+                <p class="card-text">
+                  This delicious breakfast plate rich in flavorful taste. This
+                  meal is the perfect balance of protein, crunch, and a touch of
+                  sweetness. Ideal for a hearty breakfast or brunch.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$26.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Spicy Shrimp Stir-Fry Noodles.jpg"
+                class="card-img-top"
+                alt="Spicy Shrimp Stir-Fry Noodles Dish"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Spicy Shrimp Stir-Fry Noodles</h5>
+                <p class="card-text">
+                  A vibrant and flavorful dish. This dish offers a delightful
+                  balance of spices, umami, and a hint of sweetness, making it a
+                  satisfying meal for any time of the day. The mix of vegetables
+                  adds a refreshing crunch, while the shrimp infuses the dish
+                  with a rich seafood taste.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$24.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Spicy Glazed Chicken Wings.jpg"
+                class="card-img-top"
+                alt="Spicy Glazed Chicken Wings"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Spicy Glazed Chicken Wings 🔥</h5>
+                <p class="card-text">
+                  Succulent, fall-off-the-bone chicken wings cooked to golden
+                  perfection, they are tender on the inside and slightly crispy
+                  on the outside, offering the perfect balance of heat,
+                  sweetness, and umami flavors. Every bite is packed with bold
+                  seasoning, making this dish a must-try for spice lovers and
+                  chicken enthusiasts alike.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$21.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Savory Chicken Curry with Steamed Rice.jpg"
+                class="card-img-top"
+                alt="Savory Chicken Curry with Steamed Rice"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Savory Chicken Curry with Steamed Rice
+                </h5>
+                <p class="card-text">
+                  Tender, slow-cooked chicken drumsticks bathed in a rich,
+                  aromatic curry sauce infused with flavorful spices, a balance
+                  of sweetness and heat. A true delight for lovers of bold
+                  flavors and wholesome meals.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$26.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Chapati Wrap Delight.jpg"
+                class="card-img-top"
+                alt="Chapati Wrap Delight"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Chapati Wrap Delight 🌯</h5>
+                <p class="card-text">
+                  This delicious meal chapati adds a rich, smoky taste, while
+                  the crunchy vegetables and creamy pasta salad inside provide a
+                  perfect balance of textures. It is wrap is a delightful fusion
+                  of flavors, making it a great snack or light meal option.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$24.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Savory Yam Stir-Fry with Smoked Turkey.jpg"
+                class="card-img-top"
+                alt="Savory Yam Stir-Fry with Smoked Turkey"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Savory Yam Stir-Fry with Smoked Turkey
+                </h5>
+                <p class="card-text">
+                  This hearty dish of soft yet crunchy texture of the yam pairs
+                  perfectly with the seasoned and smoked turkey wing, which adds
+                  a deep, smoky taste to the meal. This dish is a great balance
+                  of protein, carbs, and spices, making it a satisfying and
+                  comforting meal.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$21.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Fried Yam with Spicy Fish Sauce.jpg"
+                class="card-img-top"
+                alt="Fried Yam with Spicy Fish Sauce"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fried Yam with Spicy Fish Sauce</h5>
+                <p class="card-text">
+                  This meal is popular in West African cuisine, particularly in
+                  Nigeria and Ghana, where fried yam is a staple street food
+                  often enjoyed with pepper sauce, egg, or fish. It's a
+                  delicious, hearty dish that offers a balance of crunch, spice,
+                  and umami flavors.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$26.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/African Salad and Protiens.jpg"
+                class="card-img-top"
+                alt="African Salad (Abacha)"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  African Salad (Abacha) with Grilled Fish & Ponmo
+                </h5>
+                <p class="card-text">
+                  This vibrant and delicious dish is a traditional Nigerian
+                  delicacy known as Abacha. Abacha is commonly enjoyed in
+                  Eastern Nigeria as a street food or special delicacy, often
+                  accompanied by a cold drink.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$24.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Palm Wine.jpeg"
+                class="card-img-top"
+                alt="Palm Wine in Coconut Shell"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Palm Wine</h5>
+                <p class="card-text">
+                  Fresh palm wine is a traditional and naturally fermented
+                  beverage widely enjoyed across West Africa, Central Africa,
+                  and parts of Asia.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$21.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Peppered spaghetti meat balls.jpg"
+                class="card-img-top"
+                alt="Spicy Peppered Spaghetti with Meatballs"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Spicy Peppered Spaghetti Meatballs</h5>
+                <p class="card-text">
+                  This is a delicious and colorful dish featuring spicy,
+                  peppered spaghetti paired with succulent, well-seasoned
+                  meatballs. This dish is perfect for those who love a fusion of
+                  Italian and African flavors, with an emphasis on bold, spicy,
+                  and savory tastes.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$26.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Potatoe Chicken Sauce.jpg"
+                class="card-img-top"
+                alt="Creamy Potato & Chicken Sauce"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Creamy Potato & Chicken Sauce</h5>
+                <p class="card-text">
+                  This is a rich and hearty dish featuring soft, boiled potatoes
+                  in a flavorful, creamy broth, combined with tender pieces of
+                  chicken, sausages, and fresh vegetables. This dish is
+                  comforting, nutritious, and perfect for a warm, filling meal.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$24.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Chapman.jpeg"
+                class="card-img-top"
+                alt="Chapman"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Chapman</h5>
+                <p class="card-text">
+                  Chapman is loved for its sweet, tangy, and slightly bitter
+                  taste, is a popular Nigerian non-alcoholic cocktail, known for
+                  its refreshing and fruity taste. It is typically made with a
+                  mix of Fanta, Sprite, Angostura bitters, grenadine syrup, and
+                  blackcurrant cordial, served over ice.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$21.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Asaro yam porridge.jpeg"
+                class="card-img-top"
+                alt="Yam Porridge"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Asaro (Yam Porridge)</h5>
+                <p class="card-text">
+                  Asaro, commonly known as Yam Porridge, is a popular Nigerian
+                  delicacy made from boiled yam cooked in a rich and flavorful
+                  tomato-pepper sauce. It has a creamy and slightly chunky
+                  texture, making it a comfort food loved across West Africa.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$26.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Moi moi.jpg"
+                class="card-img-top"
+                alt="Moi Moi"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Moi Moi (Steamed Bean Pudding)
+                </h5>
+                <p class="card-text">
+                  Moi Moi is a savory, protein-rich Nigerian dish made from blended beans, peppers, onions, and spices, then steamed to perfection.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$24.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Kunnu.jpeg"
+                class="card-img-top"
+                alt="Kunu"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Kunu (Traditional Nigerian Millet Drink)</h5>
+                <p class="card-text">
+                  Kunu is a rich, creamy, and refreshing traditional Nigerian beverage made from grains such as millet, sorghum, or tiger nuts. 
+                  It is a popular drink across West Africa, enjoyed for its unique taste and nutritional benefits.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$21.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img src="/files/Spicy Pasta & Beans Stir-Fry.jpg" class="card-img-top" alt="Spicy Pasta & Beans Stir-Fry" />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Spicy Pasta & Beans Stir-Fry
+                </h5>
+                <p class="card-text">
+                 This unique and creative dish is a fusion of Nigerian and Italian flavors. 
+                 This meal is a bold and satisfying combination, perfect for those who love a mix of textures and flavors. A great homemade comfort food! 🍽🔥
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$26.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Grilled Fish & Yam.jpg"
+                class="card-img-top"
+                alt="Grilled Fish with Boiled Yam & Pepper Sauce"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Grilled Fish with Boiled Yam & Pepper Sauce
+                </h5>
+                <p class="card-text">
+                  This mouthwatering dish is a classic Nigerian meal, packed with proteins and healthy carbs, making it an excellent choice for a nutritious and satisfying meal.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$24.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Zobo.jpeg"
+                class="card-img-top"
+                alt="Zobo"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Zobo</h5>
+                <p class="card-text">
+                  Stir-fried rice with mixed vegetables, prawns, and liver,
+                  served with plantain.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$21.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img src="/files/goat meat pepper soup.jpg" class="card-img-top" alt="Goat Meat Pepper Soup" />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Goat Meat Pepper Soup
+                </h5>
+                <p class="card-text">
+                  This is a spicy and aromatic Nigerian delicacy made with tender pieces of goat meat, slow-cooked in a rich, flavorful broth infused with local spices.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$26.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Grilled Chicken & Rice Veggies.jpg"
+                class="card-img-top"
+                alt="Grilled Chicken with Rice, Vegetables, and Fried Plantain"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Grilled Chicken with Rice, Vegetables, and Fried Plantain
+                </h5>
+                <p class="card-text">
+                  This meal is a classic West African dish, balancing protein, carbs, and vitamins, making it both nutritious and satisfying. Perfect for a hearty lunch or dinner.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$24.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Meat Pie.jpg"
+                class="card-img-top"
+                alt="Meat Pie"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Meat Pie</h5>
+                <p class="card-text">
+                  Meat Pie is a golden, flaky, and delicious pastry filled with a savory mixture of minced meat, 
+                  potatoes, and carrots, seasoned with spices for an irresistible taste.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$21.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img src="/files/Nigerian jollof & salad.jpg" class="card-img-top" alt="Jollof Rice with Chicken and Salad" />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Jollof Rice with Chicken and Salad
+                </h5>
+                <p class="card-text">
+                  This meal is a staple at Nigerian parties, celebrations, and family gatherings, bringing a perfect balance of spice, crunch, and indulgence.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$26.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Ewedu Soup & Fufu.jpg"
+                class="card-img-top"
+                alt="Ewedu Soup with Gbegiri, Assorted Meat & Fufu"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Ewedu Soup with Gbegiri, Assorted Meat & Fufu
+                </h5>
+                <p class="card-text">
+                  This is a traditional Nigerian dish is a flavorful, hearty, and nutrient-packed meal 
+                  that brings together earthy, spicy, and savory tastes, making it a favorite among lovers of Nigerian cuisine! 🍲🔥
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$24.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/RoseWmen Sparkling Wine.jpg"
+                class="card-img-top"
+                alt="RoseWmen Sparkling Wine"
+              />
+              <div class="card-body">
+                <h5 class="card-title">RoseWmen Sparkling Wine</h5>
+                <p class="card-text">
+                  A premium sparkling wine, RoseWmen is the perfect blend of luxury and celebration. 
+                  Its rich and bubbly texture, combined with a smooth taste, makes it a classic choice for wine lovers. 
+                  Whether enjoyed alone or paired with a gourmet meal, RoseWmen promises a sip of sophistication in every glass! 🥂✨
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$21.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img src="/files/Combo pack.jpg" class="card-img-top" alt="Spicy Combo Box" />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Spicy Combo Box
+                </h5>
+                <p class="card-text">
+                  The perfect balance of heat, crunch, and sweetness makes this a go-to Nigerian food delight.
+                  Whether you're craving a spicy bite, a soft treat, or a crispy snack, this meal has it all in one box! 🔥🍗🍞🍠
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$26.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Grilled Croaker & Golden Rice Delight.jpg"
+                class="card-img-top"
+                alt="Grilled Croaker & Golden Rice Delight"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Grilled Croaker & Golden Rice Delight
+                </h5>
+                <p class="card-text">
+                  A delicious fusion of flavors, this meal features fragrant yellow fried rice, infused with spices, sweet corn, kidney beans, and diced vegetables for a wholesome taste. 
+                  It's paired with a perfectly grilled croaker fish, seasoned and seared to crispy perfection. On the side, a fresh and creamy coleslaw adds a refreshing crunch, creating a 
+                  balanced and satisfying meal. A nutritious, vibrant, and flavorful dish, perfect for seafood lovers.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$24.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/chips & chicken.jpg"
+                class="card-img-top"
+                alt="Ultimate Fried Delight"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Ultimate Fried Delight</h5>
+                <p class="card-text">
+                  A crispy and satisfying combination of golden French fries, fried ripe plantains, a juicy chicken drumstick, 
+                  and a grilled sausage, served on a plate for the perfect comfort meal. Perfect for a casual lunch or dinner, this 
+                  meal delivers a balance of savory, crispy, and slightly sweet flavors.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$21.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img src="/files/Efo assorted Soup & Eba.jpg" class="card-img-top" alt="Efo Riro with Assorted Meat & Yellow Eba" />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Efo Riro with Assorted Meat & Yellow Eba
+                </h5>
+                <p class="card-text">
+                  This meal is a hearty and satisfying choice that brings together bold flavors, rich textures, 
+                  and a deliciously spicy kick—perfect for lovers of traditional Nigerian cuisine.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$26.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/chipotle chicken avacado melt.jpg"
+                class="Chipotle Chicken Avocado Melt"
+                alt="Mediterranean Dish"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Chipotle Chicken Avocado Melt
+                </h5>
+                <p class="card-text">
+                  A deliciously smoky and creamy grilled sandwich, Perfect for a quick lunch or a satisfying snack, 
+                  this melt combines bold flavors with a creamy, cheesy texture, making it an irresistible treat.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$24.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Chicken Noodles.jpg"
+                class="card-img-top"
+                alt="Spicy Chicken & Stir-Fry Noodles"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Spicy Chicken & Stir-Fry Noodles</h5>
+                <p class="card-text">
+                  A bold and flavorful dish featuring the combination of spicy heat, crispy texture, and rich flavors makes this a mouthwatering delight for noodle and chicken lovers alike.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$21.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img src="/files/Beans & Plantain.jpg" class="card-img-top" alt="Beans & Plantain" />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Beans & Plantains
+                </h5>
+                <p class="card-text">
+                  This is a delicious and hearty Nigerian beans porridge. This meal is a favorite in West Africa due to its nutritional value, affordability, and comforting taste.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$26.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Chicken Macroni.jpg"
+                class="card-img-top"
+                alt="Saucy Macaroni & Crispy Chicken"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Saucy Macaroni & Crispy Chicken
+                </h5>
+                <p class="card-text">
+                  This dish is a balance of savory, tangy, and slightly spicy flavors makes it a satisfying treat.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$24.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Crispy Chops Platter.jpg"
+                class="card-img-top"
+                alt="Crispy Chops Platter"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Crispy Chops Platter</h5>
+                <p class="card-text">
+                  A crispy, savory feast featuring golden French fries drizzled with ketchup, perfectly fried chicken, and crunchy spring rolls. 
+                  Ideal for a casual get-together, movie night, or indulgent treat, this dish pairs well with a cold drink and your favorite dipping sauce
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$21.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img src="/files/Spicy Chicken Feet Delight.jpg" class="card-img-top" alt="Spicy Chicken Feet Delight" />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Spicy Chicken Feet Delight
+                </h5>
+                <p class="card-text">
+                  This dish is a rich, slow-cooked chicken feet stew infused with bold spices, herbs, and a thick, flavorful sauce. 
+                  Garnished with fresh parsley or cilantro, this meal is perfect for lovers of deep, comforting, and traditional flavors. It's enjoyed as a snack, side dish, or main meal.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$26.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/catfish pepper soup & yam.jpg"
+                class="card-img-top"
+                alt="Spicy Catfish Pepper Soup with Yam"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Spicy Catfish Pepper Soup with Yam
+                </h5>
+                <p class="card-text">
+                  This is a comforting and flavorful Nigerian delicacy made with tender catfish chunks simmered in a rich, spicy broth infused with aromatic herbs, ground peppers, and traditional spices.
+                   This dish is perfect for warming up on cold days, boosting appetite, or simply enjoying a bold and spicy traditional meal.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$24.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Spicy Beef Stir-Fry Noodles.jpg"
+                class="card-img-top"
+                alt="Spicy Beef Stir-Fry Noodles"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Spicy Beef Stir-Fry Noodles</h5>
+                <p class="card-text">
+                  This delicious and vibrant noodle dish is a perfect blend of savory, spicy, and umami flavors. 
+                  The meal is a quick and hearty comfort dish, perfect for lovers of spicy stir-fry noodles with an African or Asian twist.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$21.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img src="/files/Ultimate Burger & Loaded Fries Feast.jpg" class="card-img-top" alt="Ultimate Burger & Loaded Fries Feast" />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Ultimate Burger & Loaded Fries Feast
+                </h5>
+                <p class="card-text">
+                  This mouthwatering spread is a burger lover's dream paired with irresistible loaded fries.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$26.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/ugba special.jpg"
+                class="card-img-top"
+                alt="Mediterranean Dish"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Zanzibar Pizza (Tanzania - Fusion of Indian & Italian)
+                </h5>
+                <p class="card-text">
+                  A pan-fried stuffed pastry filled with minced meat, egg,
+                  cheese, and vegetables, served as street food.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$24.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/rose wine.jpg"
+                class="card-img-top"
+                alt="Fried Rice"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fried Rice</h5>
+                <p class="card-text">
+                  Stir-fried rice with mixed vegetables, prawns, and liver,
+                  served with plantain.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$21.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img src="/files/Titus Fish & Porridge Yam.jpg" class="card-img-top" alt="Akara" />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Akara (West Africa - Similar to Falafel)
+                </h5>
+                <p class="card-text">
+                  Deep-fried black-eyed pea fritters, crispy on the outside and
+                  soft inside, often eaten with pepper sauce.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$26.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/buger royal.jpg"
+                class="card-img-top"
+                alt="The Royal Crunch Burger"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  The Royal Crunch Burger
+                </h5>
+                <p class="card-text">
+                  This is an ultimate loaded burger, packed with bold flavors and an irresistible crunch. It's a perfect mix of savory, smoky, cheesy, and crispy goodness, making it a dream for burger lovers.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$24.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Turkey Spaghetti Madness.jpg"
+                class="card-img-top"
+                alt="Fried Rice"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fried Rice</h5>
+                <p class="card-text">
+                  Stir-fried rice with mixed vegetables, prawns, and liver,
+                  served with plantain.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$21.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img src="/files/Vegetable Salad.jpg" class="card-img-top" alt="Akara" />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Akara (West Africa - Similar to Falafel)
+                </h5>
+                <p class="card-text">
+                  Deep-fried black-eyed pea fritters, crispy on the outside and
+                  soft inside, often eaten with pepper sauce.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$26.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Chin Chin.jpeg"
+                class="card-img-top"
+                alt="Mediterranean Dish"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Zanzibar Pizza (Tanzania - Fusion of Indian & Italian)
+                </h5>
+                <p class="card-text">
+                  A pan-fried stuffed pastry filled with minced meat, egg,
+                  cheese, and vegetables, served as street food.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$24.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Spicy Peppered Assorted Meat (Nkwobi-Style).jpg"
+                class="card-img-top"
+                alt="Spicy Peppered Assorted Meat (Nkwobi-Style)"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Spicy Peppered Assorted Meat (Nkwobi-Style)</h5>
+                <p class="card-text">
+                  Stir-fried rice with mixed vegetables, prawns, and liver,
+                  served with plantain.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$21.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img src="/files/pancakes.jpg" class="card-img-top" alt="Akara" />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Akara (West Africa - Similar to Falafel)
+                </h5>
+                <p class="card-text">
+                  Deep-fried black-eyed pea fritters, crispy on the outside and
+                  soft inside, often eaten with pepper sauce.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$26.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Pepper’d Boli Delight.jpg"
+                class="card-img-top"
+                alt="Mediterranean Dish"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Zanzibar Pizza (Tanzania - Fusion of Indian & Italian)
+                </h5>
+                <p class="card-text">
+                  A pan-fried stuffed pastry filled with minced meat, egg,
+                  cheese, and vegetables, served as street food.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$24.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Peppered Chicken & Jollof.jpg"
+                class="card-img-top"
+                alt="Fried Rice"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fried Rice</h5>
+                <p class="card-text">
+                  Stir-fried rice with mixed vegetables, prawns, and liver,
+                  served with plantain.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$21.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img src="/files/Peppered Gizzard.jpeg" class="card-img-top" alt="Akara" />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Akara (West Africa - Similar to Falafel)
+                </h5>
+                <p class="card-text">
+                  Deep-fried black-eyed pea fritters, crispy on the outside and
+                  soft inside, often eaten with pepper sauce.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$26.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/peppered snail & fries.jpg"
+                class="card-img-top"
+                alt="Mediterranean Dish"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Zanzibar Pizza (Tanzania - Fusion of Indian & Italian)
+                </h5>
+                <p class="card-text">
+                  A pan-fried stuffed pastry filled with minced meat, egg,
+                  cheese, and vegetables, served as street food.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$24.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Puff Puff.jpeg"
+                class="card-img-top"
+                alt="Fried Rice"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fried Rice</h5>
+                <p class="card-text">
+                  Stir-fried rice with mixed vegetables, prawns, and liver,
+                  served with plantain.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$21.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img src="/files/Rice & Fish Stew.jpg" class="card-img-top" alt="Akara" />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Akara (West Africa - Similar to Falafel)
+                </h5>
+                <p class="card-text">
+                  Deep-fried black-eyed pea fritters, crispy on the outside and
+                  soft inside, often eaten with pepper sauce.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$26.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Plantain & Eggs.jpg"
+                class="card-img-top"
+                alt="Mediterranean Dish"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Zanzibar Pizza (Tanzania - Fusion of Indian & Italian)
+                </h5>
+                <p class="card-text">
+                  A pan-fried stuffed pastry filled with minced meat, egg,
+                  cheese, and vegetables, served as street food.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$24.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Plantain and Vegetables Shrimps Sauce.jpg"
+                class="card-img-top"
+                alt="Fried Rice"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fried Rice</h5>
+                <p class="card-text">
+                  Stir-fried rice with mixed vegetables, prawns, and liver,
+                  served with plantain.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$21.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img src="/files/Plantain Vegatable Sauce.jpg" class="card-img-top" alt="Akara" />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Akara (West Africa - Similar to Falafel)
+                </h5>
+                <p class="card-text">
+                  Deep-fried black-eyed pea fritters, crispy on the outside and
+                  soft inside, often eaten with pepper sauce.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$26.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Roasted Yam & Plantain with sauce.jpeg"
+                class="card-img-top"
+                alt="Mediterranean Dish"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Zanzibar Pizza (Tanzania - Fusion of Indian & Italian)
+                </h5>
+                <p class="card-text">
+                  A pan-fried stuffed pastry filled with minced meat, egg,
+                  cheese, and vegetables, served as street food.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$24.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Samosa.jpeg"
+                class="card-img-top"
+                alt="Fried Rice"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fried Rice</h5>
+                <p class="card-text">
+                  Stir-fried rice with mixed vegetables, prawns, and liver,
+                  served with plantain.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$21.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img src="/files/Sea Food Fried Rice.jpg" class="card-img-top" alt="Akara" />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Akara (West Africa - Similar to Falafel)
+                </h5>
+                <p class="card-text">
+                  Deep-fried black-eyed pea fritters, crispy on the outside and
+                  soft inside, often eaten with pepper sauce.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$26.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/shawarma blast & fries.jpg"
+                class="card-img-top"
+                alt="Mediterranean Dish"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Zanzibar Pizza (Tanzania - Fusion of Indian & Italian)
+                </h5>
+                <p class="card-text">
+                  A pan-fried stuffed pastry filled with minced meat, egg,
+                  cheese, and vegetables, served as street food.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$24.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/suya.jpg"
+                class="card-img-top"
+                alt="Fried Rice"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fried Rice</h5>
+                <p class="card-text">
+                  Stir-fried rice with mixed vegetables, prawns, and liver,
+                  served with plantain.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$21.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img src="/files/shreded chicken sauce & pasta.jpg" class="card-img-top" alt="Akara" />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Akara (West Africa - Similar to Falafel)
+                </h5>
+                <p class="card-text">
+                  Deep-fried black-eyed pea fritters, crispy on the outside and
+                  soft inside, often eaten with pepper sauce.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$26.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Smoked Jollof & Peppered Chicken.jpg"
+                class="card-img-top"
+                alt="Mediterranean Dish"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Zanzibar Pizza (Tanzania - Fusion of Indian & Italian)
+                </h5>
+                <p class="card-text">
+                  A pan-fried stuffed pastry filled with minced meat, egg,
+                  cheese, and vegetables, served as street food.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$24.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Spring Rolls.jpeg"
+                class="card-img-top"
+                alt="Fried Rice"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fried Rice</h5>
+                <p class="card-text">
+                  Stir-fried rice with mixed vegetables, prawns, and liver,
+                  served with plantain.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$21.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img src="/files/Titus Fish Spag.jpg" class="card-img-top" alt="Akara" />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Akara (West Africa - Similar to Falafel)
+                </h5>
+                <p class="card-text">
+                  Deep-fried black-eyed pea fritters, crispy on the outside and
+                  soft inside, often eaten with pepper sauce.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$26.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Veggies Sauce Rice.jpg"
+                class="card-img-top"
+                alt="Mediterranean Dish"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Zanzibar Pizza (Tanzania - Fusion of Indian & Italian)
+                </h5>
+                <p class="card-text">
+                  A pan-fried stuffed pastry filled with minced meat, egg,
+                  cheese, and vegetables, served as street food.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$24.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Yummy fruit cake.jpg"
+                class="card-img-top"
+                alt="Fried Rice"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fried Rice</h5>
+                <p class="card-text">
+                  Stir-fried rice with mixed vegetables, prawns, and liver,
+                  served with plantain.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$21.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img src="/files/Jollof out of Naija.jpg" class="card-img-top" alt="Akara" />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Akara (West Africa - Similar to Falafel)
+                </h5>
+                <p class="card-text">
+                  Deep-fried black-eyed pea fritters, crispy on the outside and
+                  soft inside, often eaten with pepper sauce.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$26.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Zanzibar Pizza.jpeg"
+                class="card-img-top"
+                alt="Mediterranean Dish"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Zanzibar Pizza (Tanzania - Fusion of Indian & Italian)
+                </h5>
+                <p class="card-text">
+                  A pan-fried stuffed pastry filled with minced meat, egg,
+                  cheese, and vegetables, served as street food.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$24.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img
+                src="/files/Fried Rice.jpeg"
+                class="card-img-top"
+                alt="Fried Rice"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fried Rice</h5>
+                <p class="card-text">
+                  Stir-fried rice with mixed vegetables, prawns, and liver,
+                  served with plantain.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$21.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card menu-card h-100 shadow-sm">
+              <img src="/files/Akara.jpeg" class="card-img-top" alt="Akara" />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Akara (West Africa - Similar to Falafel)
+                </h5>
+                <p class="card-text">
+                  Deep-fried black-eyed pea fritters, crispy on the outside and
+                  soft inside, often eaten with pepper sauce.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$26.99</span>
+                  <button class="btn btn-outline-primary">
+                    Order Now <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+
+          <div class="text-center mt-4">
+            <button id="homeButton" class="btn btn-primary px-4 py-2">
+              Home
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <main>
+            <a href="#contact" class="contact-link">Contact Us</a>
+    </main> -->
+
+    <footer class="py-5 bg-light">
+      <p>Opening Hours: Daily, 10:00 AM - 10:00 PM</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document
+        .getElementById("homeButton")
+        .addEventListener("click", function () {
+          window.location.href = "index.html";
+        });
+    </script>
+  </body>
+</html>
